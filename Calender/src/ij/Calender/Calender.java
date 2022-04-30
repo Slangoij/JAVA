@@ -23,20 +23,29 @@ public class Calender {
 		// TODO Auto-generated method stub
 		System.out.println("Hello, calender");
 
-		String[] wkdays = new String[] { "ÀÏ", "¿ù", "È­", "¼ö", "¸ñ", "±Ý", "Åä" };
-		for (int i = 0; i < wkdays.length; i++) {
-			System.out.print(wkdays[i] + " ");
-		}
-		System.out.println();
-
-		for (int i = 0; i < 20; i++) {
-			System.out.print("-");
-		}
-		System.out.println();
-
-		for (int i = 0; i < 4; i++) {
-			printarr(setarr(1 + i * 7));
-		}
+		int[] mmdays = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+		Scanner scand = new Scanner(System.in);
+		int n = scand.nextInt();
+		if (0 < n && n < 13) 
+			System.out.println(mmdays[n]);
+		else
+			System.out.println("1ë¶€í„° 12ê¹Œì§€ì˜ ê°’ë§Œ ìž…ë ¥í•˜ì„¸ìš”");
+		scand.close();
+		
+//		String[] wkdays = new String[] {"ì¼","ì›”","í™”","ìˆ˜","ëª©","ê¸ˆ","í† "};
+//		for (int i = 0; i < wkdays.length; i++) {
+//			System.out.print(wkdays[i] + " ");
+//		}
+//		System.out.println();
+//
+//		for (int i = 0; i < 20; i++) {
+//			System.out.print("-");
+//		}
+//		System.out.println();
+//
+//		for (int i = 0; i < 4; i++) {
+//			printarr(setarr(1 + i * 7));
+//		}
 	}
 
 }
